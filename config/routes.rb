@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
-  get 'enrollments/index'
-  get 'enrollments/new'
+
   #localhost:3000
   root 'courses#index'
 
