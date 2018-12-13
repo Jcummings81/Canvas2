@@ -8,6 +8,7 @@ class EnrollmentsController < ApplicationController
   end
 
   def new
+    @users = User.all - @course.users
     @enrollment = @course.enrollments.new
   end
 
